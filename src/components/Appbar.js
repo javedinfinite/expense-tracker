@@ -16,13 +16,7 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  title: {
-    flexGrow: 1,
-    display: "none",
-    [theme.breakpoints.up("sm")]: {
-      display: "block",
-    },
-  },
+ 
   search: {
     position: "relative",
     borderRadius: theme.shape.borderRadius,
@@ -85,7 +79,7 @@ export default function SearchAppBar() {
             color="inherit"
             aria-label="menu"
           >
-            Expense Tracker
+            ExpenseTracker
           </IconButton>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

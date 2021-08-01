@@ -1,9 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import SearchAppBar from "./components/Appbar";
-import {Switch, Route, HashRouter, BrowserRouter} from "react-router-dom";
+import {Switch, Route, HashRouter} from "react-router-dom";
 import Error from "./components/Error";
-import Products from "./components/Expense";
+import Expense from "./components/Expense";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -20,7 +20,7 @@ function App() {
         <div className={classes.root}>
           <SearchAppBar />
           <Switch>
-            <Route exact path="/" component={Products} />
+            <Route exact path="/" component={Expense} />
             <Route component={Error} />
           </Switch>
         </div>
